@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync . s3://my-resume-bucket --delete --exclude ".git/*" --exclude ".github/*"
+          aws s3 sync . s3://kevin-wafula-resume-001 --delete --exclude ".git/*" --exclude ".github/*"
 
       - name: Invalidate CloudFront cache
         run: |
